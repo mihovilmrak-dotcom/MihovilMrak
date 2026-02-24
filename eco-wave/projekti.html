@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Wave | Projekti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        
+        <img src="images/Mihovil_Mrak_logo.jpg" alt="Eco Wave logo" class="logo">
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Naslovnica</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="projekti.html">Projekti</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Naši realizirani projekti</h1>
+        <p>
+            Pogledajte primjere uspješno izvedenih projekata u području solarne energije,
+            LED rasvjete i pametnih sustava upravljanja energijom.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="grid-2">
+            <div>
+                <h2>Obiteljska kuća – Zagreb</h2>
+                <p>
+                    Obitelj Horvat željela je smanjiti troškove električne energije i
+                    povećati energetsku neovisnost. Eco Wave je projektirao i instalirao
+                    solarni sustav snage 8 kW prilagođen orijentaciji krova i godišnjoj potrošnji kućanstva.
+                </p>
+                <p>
+                    Sustav je povezan s pametnim upravljačkim modulom koji optimizira
+                    proizvodnju i potrošnju energije u stvarnom vremenu.
+                    Rezultat je smanjenje troškova energije za više od 35%.
+                </p>
+            </div>
+            <div>
+                <img src="images/solar_panels.jpg" alt="Solarni paneli tehnologija" class="responsive-img">
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div>
+                <h2>Poslovna zgrada – Rijeka</h2>
+                <p>
+                    Tvrtka MarinTrade modernizirala je poslovni objekt s ciljem smanjenja
+                    operativnih troškova i povećanja energetske učinkovitosti.
+                </p>
+                <p>
+                    Implementirana je LED rasvjeta visoke učinkovitosti te pametni sustav
+                    koji automatski prilagođava osvjetljenje i temperaturu prema prisutnosti zaposlenika.
+                    Potrošnja energije smanjena je za 40% u prvoj godini korištenja.
+                </p>
+            </div>
+            <div>
+                <img src="images/led_lighting.jpg" alt="LED rasvjeta tehnologija" class="responsive-img">
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div>
+                <h2>Apartmanski objekt – Split</h2>
+                <p>
+                    Apartmanski kompleks BlueView želio je gostima ponuditi ekološki
+                    prihvatljiv i moderan smještaj.
+                </p>
+                <p>
+                    Eco Wave implementirao je kombinaciju solarnih panela, LED rasvjete
+                    i kućnih eco sustava koji automatski reguliraju potrošnju energije
+                    kada apartmani nisu u upotrebi. Projekt je rezultirao dugoročnim
+                    financijskim uštedama i smanjenjem CO₂ emisija.
+                </p>
+            </div>
+            <div>
+                <img src="images/smart_home_system.jpg" alt="Pametni sustav upravljanja energijom" class="responsive-img">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+
+var navLinks = document.querySelectorAll("#nav-menu a");
+navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        document.getElementById("nav-menu").classList.remove("active");
+    });
+});
+</script>
+
+</body>
+</html>

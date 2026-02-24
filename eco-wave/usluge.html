@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usluge | Eco Wave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <img src="images/Mihovil_Mrak_logo.jpg" alt="Eco Wave logo" class="logo">
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Naslovnica</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="projekti.html">Projekti</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Naše usluge</h1>
+        <p>
+            Eco Wave nudi inovativna i prilagođena energetska rješenja za domove i poslovne prostore.
+            Svaka usluga osmišljena je da poveća učinkovitost, smanji potrošnju i osigura dugoročne uštede.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="grid-2">
+            <div class="text">
+                <h2>Solarni sustavi</h2>
+                <p>
+                    Naši solarni sustavi omogućuju klijentima da samostalno proizvode električnu energiju koristeći
+                    sunčevu energiju. Paneli koje instaliramo dolaze iz najmodernijih proizvodnih linija i
+                    prilagođavamo ih potrebama svakog objekta, bilo da se radi o kući, apartmanskom objektu
+                    ili poslovnoj zgradi. Naši stručnjaci paze na optimalan kut i smjer panela kako bi
+                    maksimizirali proizvodnju energije tijekom cijele godine.
+                </p>
+                <p>
+                    Svaka instalacija uključuje integraciju s pametnim sustavima upravljanja energijom,
+                    što omogućuje kontrolu proizvodnje i potrošnje električne energije u stvarnom vremenu.
+                    Više informacija o našim solarnim sustavima možete pronaći na
+                    <a href="projekti.html">stranici Projekti</a>.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/solar_panel_product.jpg" alt="Solarni paneli" class="responsive-img">
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="text">
+                <h2>Pametni sustavi upravljanja energijom</h2>
+                <p>
+                    Naši pametni sustavi omogućuju automatizaciju kućnih i poslovnih sustava. Povezujemo
+                    rasvjetu, grijanje, hlađenje, solarne sustave i uređaje za praćenje potrošnje energije
+                    u jedinstvenu kontrolnu platformu. Na taj način korisnici mogu pratiti potrošnju,
+                    dobivati statistike i optimizirati troškove energije.
+                </p>
+                <p>
+                    Sustavi su dizajnirani da budu intuitivni i jednostavni za korištenje, a istovremeno
+                    pružaju napredne funkcije za one koji žele detaljno pratiti potrošnju i učinkovitost
+                    svih komponenti.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/smart_home_product.jpg" alt="Pametni sustav upravljanja" class="responsive-img">
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="text">
+                <h2>LED rasvjeta</h2>
+                <p>
+                    Eco Wave LED rasvjeta kombinira moderan dizajn i energetsku učinkovitost.
+                    Naši sustavi omogućuju smanjenje potrošnje električne energije, a LED žarulje imaju
+                    znatno dulji vijek trajanja u usporedbi s klasičnim rješenjima. Rasvjeta se
+                    može povezati s pametnim sustavima i prilagoditi potrebama korisnika – od ambijentalnog
+                    osvjetljenja do funkcionalnog osvjetljenja radnog prostora.
+                </p>
+                <p>
+                    Nudimo širok spektar boja i intenziteta svjetla, tako da svaki prostor može imati
+                    optimalnu rasvjetu. Više o instalacijama LED rasvjete pogledajte u
+                    <a href="projekti.html">galeriji Projekti</a>.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/led_lighting_product.jpg" alt="LED rasvjeta" class="responsive-img">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+
+var navLinks = document.querySelectorAll("#nav-menu a");
+navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        document.getElementById("nav-menu").classList.remove("active");
+    });
+});
+</script>
+
+</body>
+</html>

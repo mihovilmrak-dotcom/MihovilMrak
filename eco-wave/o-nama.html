@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nama | Eco Wave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        
+        <img src="images/Mihovil_Mrak_logo.jpg" alt="Eco Wave logo" class="logo">
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Naslovnica</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="projekti.html">Projekti</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>O nama</h1>
+        <p>
+            Eco Wave je tvrtka specijalizirana za implementaciju održivih energetskih rješenja.
+            Naš cilj je smanjiti emisiju CO₂ i omogućiti klijentima dugoročne financijske uštede kroz
+            primjenu modernih tehnologija.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <h2>Naša misija</h2>
+        <p>
+            Naša misija je omogućiti kućanstvima i poslovnim subjektima prijelaz na obnovljive izvore energije.
+            Kroz projektiranje i instalaciju solarnih sustava te pametnih rješenja upravljanja energijom,
+            osiguravamo optimizaciju potrošnje i povećanje energetske učinkovitosti.
+        </p>
+
+        <h2>Naša vizija</h2>
+        <p>
+            Vizija tvrtke Eco Wave je postati vodeći regionalni pružatelj ekoloških energetskih rješenja
+            koji kombinira inovaciju, kvalitetu i održivost.
+        </p>
+
+        <h2>Naše vrijednosti</h2>
+        <ul>
+            <li>✔ Održivost i odgovornost prema okolišu ♻</li>
+            <li>✔ Stručnost i kontinuirano usavršavanje</li>
+            <li>✔ Transparentnost u poslovanju</li>
+            <li>✔ Individualni pristup svakom klijentu</li>
+        </ul>
+
+        <h2>Naš tim</h2>
+        <p>
+            Naš tim čine stručnjaci iz područja elektrotehnike, obnovljivih izvora energije i
+            pametnih sustava automatizacije. Više o konkretnim rješenjima koje nudimo
+            možete pročitati na <a href="usluge.html">stranici Usluge</a>.
+        </p>
+
+    </div>
+</section>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+
+var navLinks = document.querySelectorAll("#nav-menu a");
+navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        document.getElementById("nav-menu").classList.remove("active");
+    });
+});
+</script>
+
+</body>
+</html>
