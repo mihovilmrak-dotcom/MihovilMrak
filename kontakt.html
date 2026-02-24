@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Wave | Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        
+        <img src="images/Mihovil_Mrak_logo.jpg" alt="Eco Wave logo" class="logo">
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Naslovnica</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="projekti.html">Projekti</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Kontaktirajte nas</h1>
+        <p>Spremni ste za prelazak na pametnu energiju? Javite nam se!</p>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="grid-2">
+            <div>
+                <h2>Naši kontakt podaci</h2>
+                <p><strong>Adresa:</strong> Industrijska 12, 10000 Zagreb</p>
+                <p><strong>Telefon:</strong> +385 1 123 4567</p>
+                <p><strong>Email:</strong> info@ecowave.hr</p>
+                <p>Možete nam poslati upit putem obrasca ili nas nazvati – rado ćemo vam pomoći.</p>
+            </div>
+
+            <div>
+                <h2>Kontakt obrazac</h2>
+                    <form action="#" method="post">
+                        <div>
+                            <label for="name">Ime i prezime:</label><br>
+                            <input type="text" id="name" name="name" required placeholder="Vaše ime">
+                        </div>
+    
+                        <div>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required placeholder="primjer@email.com">
+                        </div>
+    
+                        <div>
+                            <label for="message">Poruka:</label><br>
+                            <textarea id="message" name="message" required placeholder="Vaša poruka"></textarea>
+                        </div>
+    
+                        <div>
+                            <button type="submit">Pošalji</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+
+var navLinks = document.querySelectorAll("#nav-menu a");
+navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        document.getElementById("nav-menu").classList.remove("active");
+    });
+});
+</script>
+
+</body>
+</html>
